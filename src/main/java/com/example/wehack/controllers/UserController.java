@@ -16,4 +16,9 @@ public class UserController {
         model.addAttribute("users", userService.userList());
         return "users";
     }
+
+    @GetMapping("/admin")
+    public String admin(){
+        return "admin";
+    }
 }
